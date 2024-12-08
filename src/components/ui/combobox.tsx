@@ -15,10 +15,6 @@ export function Combobox({ message, options }) {
     const [open, setOpen] = React.useState(false);
     const [value, setValue] = React.useState("");
 
-    React.useEffect(() => {
-        console.log(value);
-    }, [value]);
-
     return (
         <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>

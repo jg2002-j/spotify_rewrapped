@@ -52,7 +52,7 @@ function Default() {
                 </form>
             </CardContent>
             <CardFooter className="flex">
-                <Button>Search</Button>
+                <Button variant="neutral">Search</Button>
             </CardFooter>
         </Card>
     );
