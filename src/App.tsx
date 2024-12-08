@@ -1,16 +1,14 @@
 import "./styles.css";
 import MainMenu from "./pages/MainMenu";
-import ModeToggle from "./components/mode-toggle";
-import { useState } from "react";
+import ThemeProvider from "./components/ModeToggle/ThemeProvider";
+import ToggleThemeButton from "./components/ModeToggle/ToggleThemeButton";
 
 function App() {
-    const [darkMode, setDarkMode] = useState(true);
-
     return (
-        <>
-            <ModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-            <MainMenu darkMode={darkMode} />
-        </>
+        <ThemeProvider>
+            <ToggleThemeButton />
+            <MainMenu />
+        </ThemeProvider>
     );
 }
 

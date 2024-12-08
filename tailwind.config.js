@@ -57,7 +57,7 @@ export default {
                 main: "#1ED760",
                 mainAccent: "#1EB260",
                 overlay: "rgba(0,0,0,0.8)",
-                bg: "#E0E7F1",
+                bg: "#D2C9B1",
                 text: "#000",
                 darkBg: "#2c312b",
                 darkText: "#eeefe9",

@@ -4,7 +4,7 @@
 
 @layer base {
     :root {
-        --background: 0 0% 100%;
+        --background: 44 27 86%;
         --foreground: 222.2 84% 4.9%;
         --card: 0 0% 100%;
         --card-foreground: 222.2 84% 4.9%;
@@ -82,4 +82,16 @@
 
 .noise {
     background-image: url("/noise.svg");
+}
+
+a {
+    @apply hover:text-main underline duration-300 transition-all font-semibold;
+}
+
+.file-upload input[type="file"] {
+    @apply absolute top-0 left-0 opacity-0 w-full h-full cursor-pointer;
+}
+
+.file-upload {
+    @apply inline-block relative overflow-hidden cursor-pointer bg-main h-10 px-4 py-2 border-2 border-border dark:border-darkBorder items-center text-text justify-center whitespace-nowrap rounded-base text-sm font-base ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
 }
