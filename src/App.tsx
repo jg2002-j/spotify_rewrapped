@@ -1,12 +1,17 @@
-import "./App.css";
-import MainMenu from "./pages/main_menu/MainMenu";
+import "./styles.css";
+import MainMenu from "./pages/MainMenu";
+import ModeToggle from "./components/mode-toggle";
+import { useState } from "react";
 
 function App() {
-  return (
-    <>
-      <MainMenu />
-    </>
-  );
+    const [darkMode, setDarkMode] = useState(true);
+
+    return (
+        <>
+            <ModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+            <MainMenu darkMode={darkMode} />
+        </>
+    );
 }
 
 export default App;
