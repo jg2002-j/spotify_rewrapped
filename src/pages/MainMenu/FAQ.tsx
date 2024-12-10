@@ -31,11 +31,21 @@ function FAQ() {
                         <AccordionTrigger>My data has information I don't want shared/stored.</AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-5">
                             <p>This website doesn't store any data beyond you opening and closing the site :)</p>
-                            <p>Everytime you revisit the page, you'll have to re-upload your files.</p>
+                            <p>
+                                That does also mean that everytime you revisit the page, you'll have to re-upload your
+                                files - you win some, you lose some.
+                            </p>
                             <p>
                                 Also the site only reads data relevant to music and streams &#40;not stuff like your IP
-                                address&#41;
+                                address&#41; unless I&apos;m lying :D.
                             </p>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem className="lg:w-[500px] max-w-full" value="item-3">
+                        <AccordionTrigger>What am I looking at?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-5">
+                            <p>Hovering over the fields on the tiles should show a popup with details.</p>
+                            <p>Otherwise idk you&apos;re on your own, sorry.</p>
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
@@ -47,6 +57,3 @@ function FAQ() {
 }
 
 export default FAQ;
-
-// 10:11 - 15:01
-// after 19:01
